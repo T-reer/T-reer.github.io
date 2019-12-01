@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-11-28T14:06:54.809Z</updated>
+  <updated>2019-12-01T11:29:24.217Z</updated>
   <id>/</id>
   
   <author>
@@ -17,9 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>二叉树度公式n0=n2+1怎么理解</title>
+    <link href="/2019/12/01/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%BA%A6/"/>
+    <id>/2019/12/01/二叉树的度/</id>
+    <published>2019-12-01T11:17:40.347Z</published>
+    <updated>2019-12-01T11:29:24.217Z</updated>
+    
+    <summary type="html">
+    
+      n0=n2+1
+    
+    </summary>
+    
+    
+      <category term="二叉树" scheme="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+      <category term="度" scheme="/tags/%E5%BA%A6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何将一棵树转化成二叉树</title>
-    <link href="/2019/11/28/hello-world/"/>
-    <id>/2019/11/28/hello-world/</id>
+    <link href="/2019/11/28/%E6%A0%91%E8%BD%AC%E5%8C%96%E4%B8%BA%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    <id>/2019/11/28/树转化为二叉树/</id>
     <published>2019-11-28T13:55:36.850Z</published>
     <updated>2019-11-28T14:06:54.809Z</updated>
     
