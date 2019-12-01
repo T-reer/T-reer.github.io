@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-12-01T11:38:23.777Z</updated>
+  <updated>2019-12-01T12:34:20.874Z</updated>
   <id>/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>哈夫曼树与哈夫曼编码(前缀编码)</title>
+    <link href="/2019/12/01/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91%E4%B8%8E%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81%EF%BC%88%E5%89%8D%E7%BC%80%E7%BC%96%E7%A0%81%EF%BC%89/"/>
+    <id>/2019/12/01/哈夫曼树与哈夫曼编码（前缀编码）/</id>
+    <published>2019-12-01T12:19:14.102Z</published>
+    <updated>2019-12-01T12:34:20.874Z</updated>
+    
+    <summary type="html">
+    
+      如何得到哈夫曼编码
+    
+    </summary>
+    
+    
+      <category term="哈夫曼树" scheme="/tags/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91/"/>
+    
+      <category term="哈夫曼编码" scheme="/tags/%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
     <title>二叉树度公式n0=n2+1怎么理解</title>
     <link href="/2019/12/01/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%BA%A6/"/>
     <id>/2019/12/01/二叉树的度/</id>
     <published>2019-12-01T11:17:40.347Z</published>
-    <updated>2019-12-01T11:38:23.777Z</updated>
+    <updated>2019-12-01T12:21:30.003Z</updated>
     
     <summary type="html">
     

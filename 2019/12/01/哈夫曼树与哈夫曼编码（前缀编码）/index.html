@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">archive_a | T-reer</title>
+  <title itemprop="name">哈夫曼树与哈夫曼编码(前缀编码) | T-reer</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -383,133 +383,131 @@
   </div>
 </header>
 
-      <div class="blank" style="padding-top: 75px;">
-</div>
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
 <div id="content" class="site-content">
-  <div id="main">
-    <header class="page-header">
-      <h1 class="cat-title">
-      归档</h1>
-      <span class="cat-des">
-        <p>
-        Archives</p>
-      </span>
-    </header>
-    <div id="main-part">
-      <article class="art">
-        <div class="art-main">
-          <div class="art-content">
-            <div id="archives">
-              <p style="text-align:right;">
-                [<span id="al_expand_collapse" style="cursor: s-resize;">
-                全部展开/收缩</span>
-              ]</p>
-              
-              
-              
-              
-              
-                
-                <h3 class="al_year">2019年</h3>
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      12月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2019/12/01/哈夫曼树与哈夫曼编码（前缀编码）/">
-                          <span style="color:#0bf;">
-                          01日20:19:14</span>
-                          哈夫曼树与哈夫曼编码(前缀编码)
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2019/12/01/二叉树的度/">
-                          <span style="color:#0bf;">
-                          01日19:17:40</span>
-                          二叉树度公式n0=n2+1怎么理解
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
-              
-              
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      11月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2019/11/28/树转化为二叉树/">
-                          <span style="color:#0bf;">
-                          28日21:55:36</span>
-                          如何将一棵树转化成二叉树
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
-              
-              
-              
-                
-                <h3 class="al_year">2018年</h3>
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      12月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2018/12/12/Hexo-Theme-Sakura/">
-                          <span style="color:#0bf;">
-                          12日22:16:01</span>
-                          Hexo-Theme-Sakura
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+          <header class="entry-header">
+            <h1 class="entry-title">哈夫曼树与哈夫曼编码(前缀编码)</h1>
+            <p class="entry-census">&nbsp;·&nbsp;2019-12-1&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
+
+            <hr>
+          </header>
+        
+        <div class="entry-content">
+          <p>本文链接：[<a href="https://blog.csdn.net/w_linux/article/details/78592274]" target="_blank" rel="noopener">https://blog.csdn.net/w_linux/article/details/78592274]</a></p>
+<h2 id="二叉树和哈夫曼树"><a href="#二叉树和哈夫曼树" class="headerlink" title="二叉树和哈夫曼树"></a>二叉树和哈夫曼树</h2><p><img src="https://img-blog.csdn.net/20171121142410825?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd19saW51eA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt></p>
+<h2 id="哈夫曼树的构造（以下举例以5-6-2-9-7森林为例）"><a href="#哈夫曼树的构造（以下举例以5-6-2-9-7森林为例）" class="headerlink" title="哈夫曼树的构造（以下举例以5,6,2,9,7森林为例）"></a>哈夫曼树的构造（以下举例以5,6,2,9,7森林为例）</h2><ul>
+<li>(1) 根据给定的n个权值(W1,W2,W3….)构造n棵二叉树的集合F={T1，T2，T3..}其中每棵二叉树Ti只有一个带权为Wi的根结点，其左右子树为空</li>
+</ul>
+<p><img src="https://img-blog.csdn.net/20171121142430232?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd19saW51eA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt></p>
+<ul>
+<li>(2) 在F中选取两棵根结点的权值最小的树作为左右子树构造一棵新的二叉树，它俩的双亲的权值是它俩权值之和（如下图出现两个7，不用担心，不管哪个7和6匹配都不会有问题）</li>
+</ul>
+<p><img src="https://img-blog.csdn.net/20171121142451560?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd19saW51eA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt></p>
+<ul>
+<li>(3) 通过(2)得到两棵构成新的二叉树</li>
+<li>(4) 重复(2)(3)操作，直到最后为一棵树为止，这棵树便是哈夫曼树</li>
+</ul>
+<p><img src="https://img-blog.csdn.net/20171121142531136?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd19saW51eA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt><br><img src="https://img-blog.csdn.net/20171121142547638?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd19saW51eA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt><br><img src="https://img-blog.csdn.net/20171121142606101?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd19saW51eA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt></p>
+<h2 id="哈夫曼编码"><a href="#哈夫曼编码" class="headerlink" title="哈夫曼编码"></a>哈夫曼编码</h2><p>文字内容”ABCDEF”，通过二进制数据表示</p>
+<p><img src="https://img-blog.csdn.net/20171121142639266?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd19saW51eA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt></p>
+<p>假设给每个字母分配权值：A：27，B：8，C：15，D：15，E：30，F：5，首先按照它们的权值进行构造哈夫曼树</p>
+<p><img src="https://img-blog.csdn.net/20171121142745261?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd19saW51eA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt></p>
+<p>得到相应字符的的传输数据</p>
+<p><img src="https://img-blog.csdn.net/20171121142842112?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd19saW51eA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt></p>
+<p>下面是通过哈夫曼编码得到，可以看出，频率高的字符数据变的少，这样如果在很多字符下，会大大减少存储率和传输成本</p>
+<ul>
+<li>原编码二进制串：000001010011100101</li>
+<li>新编码二进制串：01100110100111000</li>
+</ul>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/T-reer/CDN/img/custom/donate/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/T-reer/CDN/img/custom/donate/WeChanQR.jpg"></li>
+              </ul>
             </div>
           </div>
         </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
       </article>
-    </div>
-  </div>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2019/12/01/二叉树的度/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                二叉树度公式n0=n2+1怎么理解</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz",
+        appKey: "mgOpfzbkHYqU92CV4IDlAUHQ",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author"></a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i></p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
+
+
 
     </div>    
     <div class="ins-search">
