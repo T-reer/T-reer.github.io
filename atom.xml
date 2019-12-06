@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-12-06T08:59:10.028Z</updated>
+  <updated>2019-12-06T09:06:45.999Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据结构练习题</title>
+    <link href="/2019/12/06/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%A2%98%E7%9B%AE/"/>
+    <id>/2019/12/06/数据结构题目/</id>
+    <published>2019-12-06T09:04:06.878Z</published>
+    <updated>2019-12-06T09:06:45.999Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;练习题&quot;&gt;&lt;a href=&quot;#练习题&quot; class=&quot;headerlink&quot; title=&quot;练习题&quot;&gt;&lt;/a&gt;练习题&lt;/h2&gt;&lt;p&gt;图–习题[&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="习题" scheme="/tags/%E4%B9%A0%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>拓扑排序的简单例子</title>
@@ -78,9 +102,9 @@
     
       <category term="二叉树" scheme="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
     
-      <category term="哈夫曼树" scheme="/tags/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91/"/>
-    
       <category term="度" scheme="/tags/%E5%BA%A6/"/>
+    
+      <category term="哈夫曼树" scheme="/tags/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91/"/>
     
   </entry>
   
