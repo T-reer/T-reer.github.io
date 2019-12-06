@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-12-01T12:34:20.874Z</updated>
+  <updated>2019-12-06T08:59:10.028Z</updated>
   <id>/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>拓扑排序的简单例子</title>
+    <link href="/2019/12/06/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F%E7%AE%80%E5%8D%95%E4%BE%8B%E5%AD%90/"/>
+    <id>/2019/12/06/拓扑排序简单例子/</id>
+    <published>2019-12-06T08:56:31.676Z</published>
+    <updated>2019-12-06T08:59:10.028Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本文链接：[&lt;a href=&quot;https://blog.csdn.net/qq_41713256/article/details/80805338]&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="拓扑排序" scheme="/tags/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/"/>
+    
+      <category term="图" scheme="/tags/%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>哈夫曼树与哈夫曼编码(前缀编码)</title>
     <link href="/2019/12/01/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91%E4%B8%8E%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81%EF%BC%88%E5%89%8D%E7%BC%80%E7%BC%96%E7%A0%81%EF%BC%89/"/>
     <id>/2019/12/01/哈夫曼树与哈夫曼编码（前缀编码）/</id>
     <published>2019-12-01T12:19:14.102Z</published>
-    <updated>2019-12-01T12:34:20.874Z</updated>
+    <updated>2019-12-01T12:35:57.087Z</updated>
     
     <summary type="html">
     
@@ -52,9 +78,9 @@
     
       <category term="二叉树" scheme="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
     
-      <category term="度" scheme="/tags/%E5%BA%A6/"/>
-    
       <category term="哈夫曼树" scheme="/tags/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91/"/>
+    
+      <category term="度" scheme="/tags/%E5%BA%A6/"/>
     
   </entry>
   
